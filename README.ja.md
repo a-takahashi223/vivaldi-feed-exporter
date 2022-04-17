@@ -9,7 +9,7 @@
 
 - [このページ](https://help.vivaldi.com/ja/desktop-ja/tools-ja/import-and-export-browser-data/#Vivaldi)に従ってVivaldiプロファイルフォルダを特定
 - `pipx install vivaldi-feed-exporter`で`vivaldi-feed-exporter`をインストールする
-- `vivaldi-feed-exporter -p <プロファイルフォルダのパス>`を実行すると、標準出力にOPMLが出力される
+- `vivaldi-feed-exporter <プロファイルフォルダのパス>`を実行すると、標準出力にOPMLが出力される
 
 ## VivaldiのフィードプロパティとOPMLの`outline`要素の属性との対応
 

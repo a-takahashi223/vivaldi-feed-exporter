@@ -22,7 +22,7 @@ def run():
 def parse_args(args: Optional[Sequence[str]] = None):
     parser = ArgumentParser()
     parser.add_argument(
-        "-p", "--profile-folder", type=_existent_directory, required=True
+        "profile_folder", type=_existent_directory, metavar="<profile folder>"
     )
     return parser.parse_args(args)
 
