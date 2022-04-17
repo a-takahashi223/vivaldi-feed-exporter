@@ -1,0 +1,5 @@
+inherits:
+- default
+bandit:
+  options:
+    config: bandit.yaml
