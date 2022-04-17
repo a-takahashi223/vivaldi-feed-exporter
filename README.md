@@ -7,7 +7,8 @@ I created a command line tool to generate [OPML](http://opml.org) based on a pro
 
 ## Usage
 
-- Follow [this page](https://help.vivaldi.com/ja/desktop-ja/tools-ja/import-and-export-browser-data/#Vivaldi) to identify your Vivaldi profile folder
+- Follow [this page](https://help.vivaldi.com/desktop/tools/import-and-export-browser-data/#Transfer_the_full_Vivaldi_browser_profile) 
+  to identify your Vivaldi profile folder
 - Install `vivaldi-feed-exporter` via `pipx install vivaldi-feed-exporter`
 - Running `vivaldi-feed-exporter <profile folder path>` will output OPML to standard output
 
