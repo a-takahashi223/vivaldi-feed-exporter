@@ -1,11 +1,19 @@
 from argparse import ArgumentParser
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
+import json
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
+
+_PREFERENCE_FILENAME = "Preferences"
+_FEEDS_GETTER: Callable[[dict[str, Any]], list[dict[str, str]]] = lambda p: p[
+    "vivaldi"
+]["rss"]["settings"]
 
 
 def run():
-    parse_args()
+    with open(parse_args().profile_folder / _PREFERENCE_FILENAME, encoding="utf8") as f:
+        preferences = json.load(f)
+    feeds = _FEEDS_GETTER(preferences)
 
 
 def parse_args(args: Optional[Sequence[str]] = None):
