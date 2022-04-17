@@ -3,3 +3,6 @@ inherits:
 bandit:
   options:
     config: bandit.yaml
+mypy:
+  options:
+    ignore-missing-import: true
