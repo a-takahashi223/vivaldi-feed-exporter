@@ -1,0 +1,13 @@
+{
+    "python.linting.prospectorArgs": [
+        "-w",
+        "pyroma",
+        "-w",
+        "vulture",
+        "-w",
+        "mypy",
+        "-w",
+        "bandit",
+        "whitelist.py"
+    ]
+}
